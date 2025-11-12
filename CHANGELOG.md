@@ -7,12 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- 🎨 Custom application icon (house with chart and percentage symbol)
+- 📦 Full cross-platform builds for macOS (Intel + ARM64), Windows (64-bit + 32-bit), and Linux (AppImage + DEB)
+
 ### Changed
 - 📝 Updated README.md to English
 - 🔒 Added privacy notice - all data stays local, nothing is sent anywhere
 - ⚠️ Added AI-generated disclaimer
 - 🗑️ Removed contributing section
 - 🔧 Changed productName to English "Property Sale Analysis" (was using Czech characters)
+- 👤 Added author info with email for Linux package requirements
 
 ### Fixed
 - 🐛 Fixed macOS app not launching without error message
