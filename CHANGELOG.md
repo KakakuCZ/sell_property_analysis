@@ -1,0 +1,52 @@
+# Changelog
+
+Všechny významné změny v tomto projektu budou zdokumentovány v tomto souboru.
+
+Formát je založen na [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+a tento projekt dodržuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2024-11-12
+
+### Přidáno
+- ✨ Základní struktura Electron aplikace
+- 🏠 Správa nemovitostí - přidávání, odebírání, editace
+- ☑️ Checkboxy pro výběr nemovitostí k prodeji
+- ☑️ Checkbox "Prodat vše" pro hromadný výběr
+- 💰 Konfigurace finančních parametrů (hotovost, úrok, doba splácení)
+- 💸 Podpora mimořádných splátek hypotéky
+- 📊 Graf vývoje měsíčních plateb a příjmů (Chart.js)
+- 📈 Graf vývoje celkového majetku v čase
+- 🔢 Automatické formátování čísel s mezerami jako oddělovači tisíců
+- 💡 Interaktivní tooltips u všech vstupů a výstupů
+- 📁 Ukládání a načítání konfigurace do/z JSON souboru
+- 🔄 Automatické propojení inzerované ceny a slevy
+- 📋 Detailní tabulka vývoje hodnot nemovitostí po 10 let
+- 🧮 Výpočet hypotéky, měsíčních splátek a úroků
+- 📐 Výpočet s mimořádnými splátkami (snížení měsíční splátky)
+- 🎨 Moderní UI s gradientním designem
+- 🌐 Cross-platform build konfigurace (macOS, Windows, Linux)
+
+### Funkce
+- Analýza různých variant prodeje nemovitostí
+- Výpočet cash flow s ohledem na příjmy z nájmu
+- Projekce růstu hodnoty nemovitostí a nájmů
+- Přepočet prodejní hodnoty podle diskontu za rychlý prodej
+- Simulace hypotéky měsíc po měsíci s mimořádnými splátkami
+- Vizualizace dat pomocí interaktivních grafů
+- Export/import scénářů pro snadné porovnávání
+
+### Technické
+- Electron 27.x jako základ aplikace
+- Chart.js 4.x pro vizualizace
+- electron-builder pro vytváření distribučních balíčků
+- Responzivní design pro různé velikosti obrazovek
+- IPC komunikace mezi main a renderer procesem
+- Bezpečný preload script s contextIsolation
+
+### Podporované platformy
+- macOS (Intel x64 + Apple Silicon arm64)
+- Windows (64-bit + 32-bit)
+- Linux (Ubuntu/Debian - AppImage a DEB balíčky)
+
+[1.0.0]: https://github.com/KakakuCZ/sell_property_analysis/releases/tag/v1.0.0
+

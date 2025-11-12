@@ -1,0 +1,44 @@
+{
+  "newPropertyName": "Byt na Vinohradech",
+  "advertisedPrice": "6500000",
+  "discount": "0.00",
+  "priceAfterDiscount": "6500000",
+  "quickSaleDiscount": "15",
+  "cash": "1000000",
+  "mortgageRate": "5",
+  "loanYears": "20",
+  "propertyGrowth": "3",
+  "rentGrowth": "3",
+  "properties": [
+    {
+      "id": 0,
+      "name": "Byt ve Slezské (Jablunkovské)",
+      "value": 4900000,
+      "saleValue": 4165000,
+      "monthlyRent": 17000
+    },
+    {
+      "id": 1,
+      "name": "Byt ve Slezské (Chvalkovická)",
+      "value": 4900000,
+      "saleValue": 4165000,
+      "monthlyRent": 0
+    },
+    {
+      "id": 2,
+      "name": "Garáž č. 1",
+      "value": 2000,
+      "saleValue": 1700,
+      "monthlyRent": 0
+    },
+    {
+      "id": 3,
+      "name": "Garáž č. 2",
+      "value": 2000,
+      "saleValue": 1700,
+      "monthlyRent": 0
+    }
+  ],
+  "extraPayments": []
+}
+
