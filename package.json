@@ -20,7 +20,7 @@
   },
   "build": {
     "appId": "com.vibecoding.propertyanalysis",
-    "productName": "Analýza prodejů nemovitostí",
+    "productName": "Property Sale Analysis",
     "files": [
       "main.js",
       "preload.js",
@@ -42,7 +42,10 @@
           "target": "zip",
           "arch": ["x64", "arm64"]
         }
-      ]
+      ],
+      "identity": null,
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
     },
     "win": {
       "target": [
