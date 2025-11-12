@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 🔒 Added privacy notice - all data stays local, nothing is sent anywhere
 - ⚠️ Added AI-generated disclaimer
 - 🗑️ Removed contributing section
+- 🔧 Changed productName to English "Property Sale Analysis" (was using Czech characters)
+
+### Fixed
+- 🐛 Fixed macOS app not launching without error message
+- 🔓 Disabled code signing for easier distribution (identity: null)
+- 🛡️ Disabled hardened runtime and gatekeeper checks
 
 ## [1.0.0] - 2024-11-12
 
