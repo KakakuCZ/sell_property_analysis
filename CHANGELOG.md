@@ -1,9 +1,17 @@
 # Changelog
 
-Všechny významné změny v tomto projektu budou zdokumentovány v tomto souboru.
+All notable changes to this project will be documented in this file.
 
-Formát je založen na [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-a tento projekt dodržuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Changed
+- 📝 Updated README.md to English
+- 🔒 Added privacy notice - all data stays local, nothing is sent anywhere
+- ⚠️ Added AI-generated disclaimer
+- 🗑️ Removed contributing section
 
 ## [1.0.0] - 2024-11-12
 

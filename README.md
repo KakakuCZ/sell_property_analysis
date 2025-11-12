@@ -1,170 +1,164 @@
-# 📊 Analýza prodejů nemovitostí
+# 📊 Property Sale Analysis
 
-Desktop aplikace pro analýzu různých kombinací prodejů nemovitostí postavená na Electron.
+> **⚠️ AI-Generated Application**: This application was generated using AI assistance to help with real estate investment analysis.
 
-## ✨ Hlavní funkce
+> **🔒 Privacy Notice**: This application runs entirely on your computer. **No data is sent anywhere**. All calculations and configurations remain completely private and anonymous on your local machine.
 
-### 🏠 Správa nemovitostí
-- **Přidávání nemovitostí**: Libovolný počet nemovitostí s názvem, hodnotou, prodejní cenou a příjmem z nájmu
-- **Výběr k prodeji**: Checkboxy u každé nemovitosti pro výběr, které chcete prodat
-- **Prodat vše**: Rychlé zaškrtnutí/odškrtnutí všech nemovitostí najednou
-- **Automatický diskont**: Prodejní hodnota se přepočítá podle diskontu za rychlý prodej
+Desktop application for analyzing various property sale combinations built on Electron.
 
-### 💰 Finanční analýza
-- **Konfigurace parametrů**: Inzerovaná cena, sleva, hotovost, úrok na hypotéce, doba splácení
-- **Mimořádné splátky hypotéky**: Plánování mimořádných splátek v konkrétních letech
-- **Automatický výpočet**: Výše hypotéky, měsíční splátky, úroky
-- **Růstové parametry**: Nastavitelný růst cen nemovitostí a nájmů
+## ✨ Key Features
 
-### 📊 Vizualizace a reporting
-- **Detailní výstupy**: Příjem z prodeje, celková hotovost, rozdíl, potřeba hypotéky
-- **Graf cash flow**: Vývoj měsíčních splátek, úroků a příjmů z nájmu v čase
-- **Graf majetku**: Vývoj celkového majetku s/bez splátek a úroků
-- **Časové projekce**: 10letý výhled vývoje hodnot a příjmů
-- **Interaktivní tooltipy**: Nápověda u všech vstupů a výstupů
+### 🏠 Property Management
+- **Add properties**: Unlimited properties with name, value, sale price, and monthly rental income
+- **Sale selection**: Checkboxes for each property to select which ones to sell
+- **Sell all**: Quick checkbox to select/deselect all properties at once
+- **Automatic discount**: Sale price recalculates based on quick sale discount
 
-### 💾 Ukládání a načítání
-- **Export konfigurace**: Uložení všech vstupů do JSON souboru
-- **Import konfigurace**: Rychlé načtení uložených scénářů
-- **Cross-platform**: Funguje na macOS, Windows i Linux
+### 💰 Financial Analysis
+- **Parameter configuration**: Listed price, discount, cash, mortgage rate, repayment period
+- **Extra mortgage payments**: Plan extra payments in specific years
+- **Automatic calculations**: Mortgage amount, monthly payments, interest
+- **Growth parameters**: Configurable property and rent growth rates
 
-## 🚀 Instalace a spuštění
+### 📊 Visualization and Reporting
+- **Detailed outputs**: Sale income, total cash, difference, mortgage needed
+- **Cash flow chart**: Monthly payment, interest, and rental income trends over time
+- **Wealth chart**: Total wealth development with/without payments and interest
+- **Time projections**: 10-year outlook of property values and income
+- **Interactive tooltips**: Help text for all inputs and outputs
 
-### Požadavky
+### 💾 Save and Load
+- **Export configuration**: Save all inputs to JSON file
+- **Import configuration**: Quick load of saved scenarios
+- **Cross-platform**: Works on macOS, Windows, and Linux
 
-- Node.js (verze 16 nebo vyšší)
-- npm nebo yarn
+## 🚀 Installation and Running
 
-### Instalace závislostí
+### Requirements
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Spuštění aplikace
+### Run Application
 
 ```bash
 npm start
 ```
 
-### Vytvoření instalačního balíčku
+### Create Installation Package
 
 ```bash
-# Pro macOS (Intel + Apple Silicon)
+# For macOS (Intel + Apple Silicon)
 npm run build:mac
 
-# Pro Windows (64-bit + 32-bit)
+# For Windows (64-bit + 32-bit)
 npm run build:win
 
-# Pro Linux (AppImage + DEB)
+# For Linux (AppImage + DEB)
 npm run build:linux
 
-# Pro všechny platformy najednou
+# For all platforms at once
 npm run build:all
 ```
 
-Aplikace vytvoří instalační soubory ve složce `dist/`:
-- **macOS**: `.dmg` (disk image) a `.zip` archivy
-- **Windows**: `.exe` instalátor (NSIS) a portable verze
-- **Linux**: `.AppImage` a `.deb` balíčky pro Ubuntu/Debian
+The application will create installation files in the `dist/` folder:
+- **macOS**: `.dmg` (disk image) and `.zip` archives
+- **Windows**: `.exe` installer (NSIS) and portable version
+- **Linux**: `.AppImage` and `.deb` packages for Ubuntu/Debian
 
-## 📖 Návod k použití
+## 📖 User Guide
 
-### Krok 1: Základní parametry
-1. Zadejte **název kupované nemovitosti** (např. "Byt na Vinohradech")
-2. Vyplňte **inzerovanou cenu** nemovitosti
-3. Zadejte **slevu v %** nebo přímo **cenu po slevě** (provázané)
-4. Nastavte **diskont za rychlý prodej** vašich nemovitostí
+### Step 1: Basic Parameters
+1. Enter the **name of the property you want to buy** (e.g., "Downtown Apartment")
+2. Fill in the **listed price** of the property
+3. Enter **discount in %** or directly **price after discount** (linked)
+4. Set the **quick sale discount** for your properties
 
-### Krok 2: Finanční parametry
-1. Zadejte kolik máte **hotovosti** k dispozici
-2. Nastavte **úrok na hypotéce** a **dobu splácení**
-3. Odhadněte **růst cen nemovitostí** a **růst nájmů** (obvykle 3%)
+### Step 2: Financial Parameters
+1. Enter how much **cash** you have available
+2. Set the **mortgage rate** and **repayment period**
+3. Estimate **property price growth** and **rent growth** (typically 3%)
 
-### Krok 3: Mimořádné splátky (volitelné)
-1. Klikněte na **"+ Přidat mimořádnou splátku"**
-2. Zadejte **rok**, kdy splátku provedete
-3. Zadejte **částku** mimořádné splátky
-4. Můžete přidat více mimořádných splátek
+### Step 3: Extra Payments (optional)
+1. Click **"+ Add extra payment"**
+2. Enter the **year** when you'll make the payment
+3. Enter the **amount** of the extra payment
+4. You can add multiple extra payments
 
-### Krok 4: Nemovitosti
-1. Klikněte na **"+ Přidat nemovitost"** pro každou vaši nemovitost
-2. Vyplňte **název**, **hodnotu**, **prodejní hodnotu** a **měsíční příjem z nájmu**
-3. **Zaškrtněte checkbox** u nemovitostí, které chcete prodat
-4. Nebo použijte **"Prodat vše"** pro rychlý výběr
+### Step 4: Properties
+1. Click **"+ Add property"** for each property you own
+2. Fill in **name**, **value**, **sale value**, and **monthly rental income**
+3. **Check the checkbox** for properties you want to sell
+4. Or use **"Sell all"** for quick selection
 
-### Krok 5: Výpočet a analýza
-1. Klikněte na **"🔄 Vypočítat"**
-2. Prohlédněte si **finanční výstupy** (hypotéka, splátky, úroky)
-3. Analyzujte **grafy**:
-   - **Graf 1**: Měsíční cash flow (splátky vs. příjmy z nájmu)
-   - **Graf 2**: Vývoj celkového majetku v čase
-4. Prostudujte **tabulku vývoje** hodnot a příjmů po 10 let
+### Step 5: Calculate and Analyze
+1. Click **"🔄 Calculate"**
+2. Review **financial outputs** (mortgage, payments, interest)
+3. Analyze **charts**:
+   - **Chart 1**: Monthly cash flow (payments vs. rental income)
+   - **Chart 2**: Total wealth development over time
+4. Study the **development table** of values and income over 10 years
 
-### Ukládání a načítání
+### Save and Load
 
-- **💾 Uložit**: Uložení konfigurace do JSON souboru pro pozdější použití
-- **📁 Načíst**: Načtení uložené konfigurace
-- Ukládají se všechny vstupy včetně mimořádných splátek (checkboxy se neuloží)
+- **💾 Save**: Save configuration to JSON file for later use
+- **📁 Load**: Load saved configuration
+- All inputs including extra payments are saved (checkboxes are not saved)
 
-## 🛠️ Technologie
+## 🛠️ Technologies
 
-- **Electron** 27.x - Framework pro cross-platform desktop aplikace
-- **Node.js** - Runtime prostředí
-- **Chart.js** 4.x - Knihovna pro interaktivní grafy
-- **HTML/CSS/JavaScript** - Frontend technologie
-- **electron-builder** - Pro vytváření instalačních balíčků pro všechny platformy
+- **Electron** 27.x - Framework for cross-platform desktop applications
+- **Node.js** - Runtime environment
+- **Chart.js** 4.x - Library for interactive charts
+- **HTML/CSS/JavaScript** - Frontend technologies
+- **electron-builder** - For creating installation packages for all platforms
 
-## 📝 Struktura projektu
+## 📝 Project Structure
 
 ```
 sell_property_analysis/
-├── main.js           # Hlavní Electron proces
-├── preload.js        # Preload script pro IPC komunikaci
-├── index.html        # HTML struktura aplikace
-├── styles.css        # Styly aplikace
-├── renderer.js       # Logika aplikace a výpočty
-├── package.json      # Konfigurace Node.js projektu
-└── README.md         # Dokumentace
+├── main.js           # Main Electron process
+├── preload.js        # Preload script for IPC communication
+├── index.html        # HTML application structure
+├── styles.css        # Application styles
+├── renderer.js       # Application logic and calculations
+├── package.json      # Node.js project configuration
+└── README.md         # Documentation
 ```
 
-## 💡 Tipy a triky
+## 💡 Tips and Tricks
 
-- **Čísla s mezerami**: Všechny částky jsou automaticky formátované (1 000 000 Kč)
-- **Provázané vstupy**: Sleva a cena po slevě se automaticky přepočítávají
-- **Tooltips**: Najeďte myší na modré ikonky **?** pro nápovědu
-- **Mimořádné splátky**: Sníží měsíční splátku a ušetříte na úrocích
-- **Grafy**: Červená linka nad zelenou = platíte více než dostáváte z nájmu
-- **Ukládejte scénáře**: Vytvořte si více konfigurací pro různé situace
-- **Cross-platform**: Aplikace funguje stejně na Mac, Windows i Linux
+- **Numbers with spaces**: All amounts are automatically formatted (1 000 000 CZK)
+- **Linked inputs**: Discount and price after discount automatically recalculate
+- **Tooltips**: Hover over blue **?** icons for help
+- **Extra payments**: Reduce monthly payment and save on interest
+- **Charts**: Red line above green = you're paying more than receiving from rent
+- **Save scenarios**: Create multiple configurations for different situations
+- **Cross-platform**: Application works the same on Mac, Windows, and Linux
+- **Privacy-first**: All data stays on your computer, nothing is sent anywhere
 
-## 🐛 Řešení problémů
+## 🐛 Troubleshooting
 
-Pokud aplikace nefunguje:
+If the application doesn't work:
 
-1. Ujistěte se, že máte nainstalovaný Node.js
-2. Smažte složku `node_modules` a spusťte `npm install` znovu
-3. Zkuste restartovat aplikaci
+1. Make sure you have Node.js installed
+2. Delete the `node_modules` folder and run `npm install` again
+3. Try restarting the application
 
-## 🤝 Přispívání
+## 📄 License
 
-Přispění jsou vítána! Prosím:
-1. Forkněte repozitář
-2. Vytvořte feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commitněte změny (`git commit -m 'Add some AmazingFeature'`)
-4. Pushněte do branche (`git push origin feature/AmazingFeature`)
-5. Otevřete Pull Request
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## 📄 Licence
+## 👨‍💻 Author
 
-MIT License - viz [LICENSE](LICENSE) soubor pro detaily.
+Created for real estate investment analysis.
 
-## 👨‍💻 Autor
+## 📧 Support
 
-Vytvořeno pro analýzu investic do nemovitostí.
-
-## 📧 Podpora
-
-Máte-li problémy nebo návrhy na vylepšení, vytvořte prosím [Issue](https://github.com/KakakuCZ/sell_property_analysis/issues) na GitHubu.
-
-
+If you have problems or suggestions for improvements, please create an [Issue](https://github.com/KakakuCZ/sell_property_analysis/issues) on GitHub.
